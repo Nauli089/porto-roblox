@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nauli | Roblox Builder Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .zoomable {
+      transition: transform 0.3s ease;
+      cursor: zoom-in;
+    }
+
+    .zoomed {
+      transform: scale(2.5);
+      z-index: 1000;
+      position: relative;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="hero">
+    <nav class="navbar">
+      <div class="logo">NauliDev</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero-content">
+      <img src="assets/profile.jpg" alt="Nauli Avatar" class="avatar" />
+      <h1>Nauli</h1>
+      <p>Roblox World Designer & Creative Environment Builder</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about" class="about">
+      <h2>About Me</h2>
+      <p>
+        I'm a Roblox builder with a passion for creating immersive, functional, and visually stunning environments. Whether it's a 
+        neon-soaked city, a medieval fortress, or a horror-themed laboratory, I transform ideas into playable experiences.
+      </p>
+    </section>
+
+    <section id="projects" class="projects">
+      <h2>My Projects</h2>
+      <div class="grid">
+        <div class="card">
+          <img class="zoomable" src="assets/graveyard.png" alt="Haunted Graveyard" />
+          <div class="info">
+            <h3>Graveyard</h3>
+            <p>This map is a low-poly graveyard environment featuring stylized gravestones, dry twisted trees, cartoonish rocks, and a clean UI panel on the side. It's designed with a playful yet eerie atmosphere in mind — ideal for simulator, pet-collecting, or tycoon-style games with Halloween or spooky themes. The vibrant lighting and fog-free environment make it readable and performant even on lower-end devices.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="zoomable" src="assets/abandoned.png" alt="Abandoned City" />
+          <div class="info">
+            <h3>Abandoned City</h3>
+            <p>This environment portrays a city in ruins, surrounded by tall protective walls and reclaimed by nature. Ideal for wave defense or zombie survival modes, it includes smoke effects, destroyed buildings, and military ruins. Great for games focused on post-disaster or apocalyptic scenarios where players must strategize and defend.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="zoomable" src="assets/city.png" alt="Futuristic City" />
+          <div class="info">
+            <h3>Futuristic City</h3>
+            <p>This cyber-themed city map features glowing neon architecture, layered highways, and a dark ambient atmosphere. Perfect for tower defense or sci-fi combat games, it includes modular skyscrapers, dynamic lighting, and a clean futuristic UI layout for wave-based gameplay. Designed to run efficiently while maintaining a strong visual identity with bold lighting accents.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <p>Need a builder for your Roblox game? Let’s connect.</p>
+      <p>Email: <a href="mailto:nauli.builder@example.com">nauli.builder@example.com</a></p>
+      <p>Roblox: <a href="https://www.roblox.com/users/12345678/profile" target="_blank">View Profile</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Nauli. Portfolio crafted with purpose and polish.</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.zoomable').forEach(img => {
+      img.addEventListener('click', () => {
+        img.classList.toggle('zoomed');
+      });
+    });
+  </script>
+</body>
+
+</html>
